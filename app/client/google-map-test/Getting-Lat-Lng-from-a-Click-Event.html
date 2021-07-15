@@ -1,0 +1,68 @@
+<!-- https://developers.google.com/maps/documentation/javascript/examples/event-click-latlng -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Getting LatLng from a Click Event</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <style>
+        /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+        #map {
+            width: 80%;
+            height: 80%;
+        }
+
+        /* Optional: Makes the sample page fill the window. */
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="map"></div>
+    <script>
+        //Convert lat long string into google maps API LatLng Object
+        //https://stackoverflow.com/questions/26890514/convert-lat-long-string-into-google-maps-api-latlng-object
+        function getLatLngFromString(location) {
+            let latlng = location.replace(/[()]/g, '').split(',');
+            console.log(latlng);
+            //locate = new google.maps.LatLng(parseFloat(latlng[0]) , parseFloat(latlng[1])); return locate; 
+            return latlng;
+        }
+
+        function initMap() {
+            var myLatlng = { lat: 35.681445, lng: 139.766004 };
+
+            var map = new google.maps.Map(
+                document.getElementById('map'), { zoom: 15, center: myLatlng });
+
+            // Create the initial InfoWindow.
+            var infoWindow = new google.maps.InfoWindow(
+                { content: 'Click the map to get Lat/Lng!', position: myLatlng });
+            infoWindow.open(map);
+
+            // Configure the click listener.
+            map.addListener('click', function (mapsMouseEvent) {
+                console.log(mapsMouseEvent.latLng.toString());
+                getLatLngFromString(mapsMouseEvent.latLng.toString());
+                // Close the current InfoWindow.
+                infoWindow.close();
+
+                // Create a new InfoWindow.
+                infoWindow = new google.maps.InfoWindow({ position: mapsMouseEvent.latLng });
+                infoWindow.setContent(mapsMouseEvent.latLng.toString());
+                infoWindow.open(map);
+            });
+        }
+    </script>
+    <!-- <script src="connectGoogleMapAPI.js"></script> -->
+    <script defer src="./Maps-JavaScript-API.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+{
+    "compilerOptions": {
+      "module": "commonjs",
+      "target": "es5",
+      "lib": [
+        "ES6",
+        "DOM"
+      ],
+      "sourceMap": true,
+      "allowJs": true,
+      "esModuleInterop": true,
+      "moduleResolution": "node",
+      "noImplicitReturns": true,
+      "noImplicitThis": true,
+      "noImplicitAny": false,
+      "strictNullChecks": true,
+      "suppressImplicitAnyIndexErrors": true,
+      "noUnusedLocals": true,
+      "strict": true
+    },
+    "exclude": [
+      "node_modules",
+      "build",
+      "scripts",
+      "**/index.js",
+      "public",
+      //Typescript error “Cannot write file … because it would overwrite input file.”
+      //https://stackoverflow.com/questions/42609768/typescript-error-cannot-write-file-because-it-would-overwrite-input-file
+      //https://stackoverflow.com/questions/48449107/how-to-exclude-files-ending-in-spec-ts-in-tsconfig-json
+      "**/public",
+      "app/client",
+      "**/google-map-js-examples"
+    ]
+  }

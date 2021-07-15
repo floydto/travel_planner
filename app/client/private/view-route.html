@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Route editor</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="view-route.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+        crossorigin="anonymous" />
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-6">
+
+                <div id="itinerary-header">
+                    <div id="itinerary-title">
+                    </div>
+                </div>
+
+                <div id="route">
+                    <div class="visit">
+                        <div class="datetime-interval">
+                            <div>2020-09-20,17:35:00</div>
+                            <div>2020-09-22,03:35:00</div>
+                        </div>
+                        <div class="marker"></div>
+                        <div class="place">
+                            東京成田機場
+                        </div>
+                    </div>
+                    <div class="transit">
+                        <div class="datetime-interval">
+                            <div>2020-09-20,17:35:00</div>
+                            <div>2020-09-22,03:35:00</div>
+                        </div>
+                        <div class="arrow">
+                            <i class="fas fa-arrow-down"></i>
+                        </div>
+                        <div class="transport">
+                            <i class="fas fa-car"></i>
+                            driving
+                        </div>
+                    </div>
+                    <div class="visit">
+                        <div class="datetime-interval">
+                            <div>2020-09-20,17:35:00</div>
+                            <div>2020-09-22,03:35:00</div>
+                        </div>
+                        <div class="marker">1</div>
+                        <div class="place">
+                            place1
+                        </div>
+                    </div>
+                    <div class="transit">
+                        <div class="datetime-interval">
+                            <div>2020-09-20,17:35:00</div>
+                            <div>2020-09-22,03:35:00</div>
+                        </div>
+                        <div class="arrow">
+                            <i class="fas fa-arrow-down"></i>
+                        </div>
+                        <div class="transport">
+                            <i class="fas fa-car"></i>
+                            driving
+                        </div>
+                    </div>
+                    <div class="visit">
+                        <div class="datetime-interval">
+                            <div>2020-09-20,17:35:00</div>
+                            <div>2020-09-22,03:35:00</div>
+                        </div>
+                        <div class="marker">2</div>
+                        <div class="place">
+                            no visit name
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-sm-6" id="map-panel">
+                <div id="map" class="margin-top-15"></div>
+            </div>
+        </div>
+    </div>
+    <script src="./connectGoogleMapAPI.js"></script>
+    <script src="http://cdn.date-fns.org/v1.9.0/date_fns.min.js"></script>
+    <!-- <script>
+        if (dateFns.isToday(new Date())) console.log("date-fns v1.9.0 loaded successfully");
+        let s = dateFns.format(new Date(), 'YYYY-MM-DD,HH:mm:ss');
+        console.log(typeof s);
+        console.log(s);
+    </script> -->
+    <script src="view-route.js"></script>
+</body>
+
+</html>

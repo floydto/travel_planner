@@ -1,0 +1,374 @@
+footer{
+    font-size: 20px;
+    border: 1px solid black;
+    padding: 25px;
+    display:flex;
+    justify-content: center;
+}
+
+footer>div{
+    margin:0 30px 0 30px; 
+    font-family: ;
+    color: #7d5506;
+    font-size: 30px;
+}
+
+button {
+    background-color: blue;
+    border: none;
+    color: white;
+    padding: 7px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    margin: 5px;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+    min-width: 60px;
+}
+
+
+#navbarTitle{
+    width:100%;
+}
+
+#navbarTitleList{
+    width:60%;
+}
+
+#logo{
+  font-size: 55px;
+  color:lightseagreen;
+}
+
+#loginSignUpBtns{
+    display: flex;
+    align-items: center;
+}
+
+.login-signUp>a{
+    background-color: #7d5506; 
+    border: none;
+    color:  papayawhip!important;
+    padding: 7px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    margin: 20px;
+    font-style: italic;
+    font-family: ;
+    min-width:160px;
+}
+
+#logo>img{
+    width:50px;
+    margin-top:2px;
+    margin-left: 2px;
+}
+
+#planContainer{
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+}
+
+.row{
+    margin:10px;
+}
+
+#searchBar{
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    width:auto;
+    min-width:460px;
+}
+
+#searchBar>input{
+    width:330px
+}
+
+#searchBar>button{
+    color: #7d5506;
+    border-color:#7d5506;
+    border-width: 2px;
+}
+
+#upperBox{
+    width:98%;
+    display: flex;
+}
+
+#lowerBox{
+    width:98%;
+    display: flex;
+    min-height: 400px;
+}
+
+#lowerBox>div>h1{
+    flex:1;
+    font-size: 80px;
+    color: papayawhip;
+    padding-top: 10%;
+    font-family: ;
+}
+
+#lowerBox>div>div{
+    padding-top: 11%;
+    padding-left: 1%;
+}
+
+.thumbnail{
+    width: 300px; 
+    height: 500px;
+    overflow: auto;
+}
+
+.thumbnail>img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#mainTitle{
+    font-size: 1.7rem;
+    color: #7d5506;
+    font-family: ;
+    font-style: oblique;
+    padding-top: 28px;
+}
+
+
+.sizeTo145{
+    padding: 0;
+    max-width: 285px;
+    display: flex;
+}
+s
+
+
+
+
+  
+
+.carousel-caption{
+    color:black;
+    left:0%;
+    right:0%;
+}
+
+.hotJourney{
+
+    margin: 5px 0 5px 0;
+    width:100%;  
+    display: flex;
+}
+
+.hotJourney:after{
+    display: block;
+    padding-bottom: 100%;
+}
+
+.placeLike{
+    font-size: 24px;
+    font-family: ;
+    
+}
+
+.trending{
+    margin:20px;
+}
+
+
+.mostCommentedRoutes{
+    border: 1px solid darkcyan;
+    margin: 5px 0 5px 0;   
+    width:100%; 
+    display: flex;
+}
+
+.mostCommentedRoutes:after{
+    display: block;
+    padding-bottom: 100%;
+}
+
+.route{
+    border: 3px solid black;
+    margin: 1px 0 1px 2px; 
+    color: orangered;
+    font-weight: 700;
+    font-size: 28px;
+    width:96%;
+}
+
+.route:after {
+    display: block;
+    padding-bottom: 100%;
+  }
+
+.route>img{
+    width:100%;
+}
+
+.route>img:after {
+    display: block;
+    padding-bottom: 100%;
+  }
+
+.route>img:hover{
+    opacity: 0.5;
+}
+
+
+.subMainTitle{
+    display: block;
+    font-family: 
+}
+
+
+img{
+    width: 100%;
+}
+
+.trendingPlaces{
+    padding-left: 8%;
+    display: flex;
+    position: relative;
+}
+
+.card{
+    width:100%;
+    margin-left: 0;
+}
+
+.textTotal{
+    position: relative;
+}
+
+.placeTitle{
+    padding: 3px 0 0 5px;
+}
+
+.descriptionText{
+    font-size: 24px;
+    font-family: 
+    overflow-wrap: break-word;
+    max-width:840px;
+}
+
+.inner2{
+    position: absolute;
+    max-width: 750px;
+    width: 35%;
+    right:2%;
+    top:75px;
+    border:2px burlywood dotted;
+    border-radius: 4px;
+}
+
+
+
+
+
+
+
+
+ @media only screen and (max-width: 870px) {
+    .lower {
+      display: block;
+    }
+  }
+    
+
+@media only screen and (max-width:1060px){
+    .login-signUp>a{
+        font-size: 18px;
+        min-width:80px;
+    }
+}
+
+@media only screen and (max-width:770px){
+    .textTotal{
+        position:static;
+
+    }
+}
+
+@media only screen and (max-width:1020px){
+    #mainTitle{
+       display: hidden;
+    }
+}
+
+@media only screen and (max-width:1060px){
+    #searchBar{
+        min-width:300px;
+    }
+    #searchBar>input{
+        width:160px;
+    }
+}
+
+@media only screen and (max-width:1180px){
+    .login-signUp>a{
+        font-size: 24px;
+        min-width:100px;
+    }
+}
+
+@media only screen and (max-width:1060px){
+    .login-signUp>a{
+        font-size: 24px;
+        min-width:100px;
+    }
+}
+
+@media only screen and (max-width:1465px){
+    #planBtn{
+        font-size: 24px;
+        min-width:100px;
+        padding-left: 7px;
+        padding-right: 7px;
+    }
+    #lowerBox>div>div{
+        padding-top:12%;
+    }
+}
+
+@media only screen and (max-width:994px){
+    #planBtn{
+   margin-left: 12%;
+    }
+    #lowerBox>div>div{
+        padding-top:30px;
+    }
+}
+
+@media only screen and (min-width:1800px){
+    #lowerBox>div>div{
+        padding-top:11%;
+    }
+}
+
+@media only screen and (min-width:2000px){
+    #lowerBox>div>div{
+        padding-top:10%;
+    }
+    .inner2{
+        right:1%;
+    }
+}
+
+@media only screen and (max-width:1550px){
+    .inner2{
+        display:none;
+    }
+}
+
+@media only screen and (min-width:1650px){
+    .inner2{
+        top:65px;
+}} 

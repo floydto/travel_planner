@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/js/animsition.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
+  <script>
+    $(".selection-2").select2({
+      minimumResultsForSearch: 20,
+      dropdownParent: $('#dropDownSelect1')
+    });
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-daterangepicker/3.0.5/daterangepicker.min.js"></script>
+  <script src="vendor/daterangepicker/daterangepicker.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/countdown/2.6.0/countdown.min.js"></script>
+  <script src="js/main.js"></script>
+
+  <link rel="stylesheet" href="./login(structured).css" />
+</head>
+
+<body>
+
+  <!--headline-->
+  <div id="highlighted" class="hl-basic hidden-xs">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-9 col-sm-offset-3 col-md-9 col-md-offset-3 col-lg-10 col-lg-offset-2">
+          <h1>Login</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="content" class="interior-page">
+    <form id="login_form" action="/login" method="POST">
+      <div class="container-fluid">
+        <div class="row">
+
+
+          <!--Sidebar-->
+          <div class="col-sm-3 col-md-3 col-lg-2 sidebar equal-height interior-page-nav hidden-xs">
+            <div class="dynamicDiv panel-group" id="dd.0.1.0">
+
+              <div id="subMenu" class="panel panel-default">
+                <ul class="subMenuHighlight panel-heading">
+
+                  <li class="subMenuHighlight panel-title" id="subMenuHighlight">
+                    <a id="li_291" class="subMenuHighlight" href="./signup.html"><span>Sign Up</span></a>
+                  </li>
+                </ul>
+
+                <ul class="panel-heading">
+                  <li class="panel-title">
+                    <a class="subMenu1" href="./forgotPassword.html">
+                      <span>Forgot Password</span></a>
+                  </li>
+                </ul>
+
+                <ul class="panel-heading">
+                  <li class="panel-title">
+                    <a class="subMenu1" href="./login(structured).html">
+                      <span class="subMenuHighlight">Login</span></a>
+                  </li>
+                </ul>
+
+              </div>
+              <div class="item item-nopad item-noborder item-gold">
+                <a style="padding: 5% 0px" href="" class="btn btn-primary btn-block" role="button">LEARN MORE</a>
+              </div>
+            </div>
+          </div>
+
+
+
+          <!--Content-->
+
+          <div class="col-sm-9 col-md-9 col-lg-10 content equal-height">
+            <div class="content-area-right">
+              <div class="content-crumb-div">
+                <a href="./index.html">Home</a> | <a href="">Your Account</a> | Login </div>
+              <div class="row">
+                <div class="col-md-5 login-form">
+
+                  <div class="wrap-input100 rs1-wrap-input100 validate-input m-b-20" data-validate="Type email">
+                    <input class="input100" type="text" name="email" placeholder="email"
+                      pattern="^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$" title="Invalid Email" required>
+                    <span class="focus-input100"></span>
+                    <span id="emailFieldError"></span>
+                  </div>
+
+                  <div class="wrap-input100 rs2-wrap-input100 validate-input m-b-20" data-validate="Type password">
+                    <input class="input100" type="password" name="password" placeholder="Password" required>
+                    <span class="focus-input100"></span>
+                    <span id="passwordFieldError"></span>
+                  </div>
+
+                  <div class="container-login100-form-btn">
+                    <a id="mybad" class="btn btn-primary" role="button">Login</a>
+
+                    <script>document.getElementById("mybad").addEventListener("click", function () {
+                        let form = document.getElementById("login_form")
+                        console.log(form)
+                        form.submit();
+                      })</script>
+                  </div>
+
+                  <div class="w-full text-center p-t-27 p-b-239">
+                    <span class="txt1">
+                      <div class="col">
+                        <a href="/connect/google" class="google btn">
+                          <i class="fa fa-google fa-fw"></i> Login with Google+
+                        </a>
+                      </div>
+                    </span>
+
+
+                  </div>
+                  <div class="login100-more" style="background-image: url('images/bg-01.jpg');"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  </div>
+  </form>
+
+
+  <div id="dropDownSelect1"></div>
+
+
+
+
+</body>
+
+</html>

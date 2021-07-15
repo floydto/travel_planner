@@ -1,0 +1,60 @@
+#map-panel {
+    height: 1000px;
+}
+
+#map {
+    width: 400px;
+    height: 400px;
+}
+
+.margin-top-15 {
+    margin-top: 15px;
+}
+
+#itinerary-header {
+    margin: 15px 50px 0px 50px;
+}
+
+.visit,.transit{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 50px;
+}
+
+.marker {
+    width: 30px;
+    height: 30px;
+    background: #45c1c9;
+    border-radius: 100px;
+    align-self: center;
+    margin-right: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.place {
+    max-width: 100px;
+}
+
+.arrow {
+    align-self: center;
+    margin-right: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow > i {
+    font-size: 30px;
+}
+
+.transport > i {
+    font-size: 24px;
+}
+
+.datetime-interval {
+    width: 150px;
+    margin-right: 30px;
+}

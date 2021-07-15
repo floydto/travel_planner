@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>sign-up page</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="signup.css" />
+</head>
+
+<body>
+
+  <!--headline-->
+  <div id="highlighted" class="hl-basic hidden-xs">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-9 col-sm-offset-3 col-md-9 col-md-offset-3 col-lg-10 col-lg-offset-2">
+          <h1>Sign Up</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="content" class="interior-page">
+    <div class="container-fluid">
+      <div class="row">
+
+        <!--Sidebar-->
+        <div class="col-sm-3 col-md-3 col-lg-2 sidebar equal-height interior-page-nav hidden-xs">
+          <div class="dynamicDiv panel-group" id="dd.0.1.0">
+
+            <div id="subMenu" class="panel panel-default">
+              <ul class="subMenuHighlight panel-heading">
+
+                <li class="subMenuHighlight panel-title" id="subMenuHighlight">
+                  <a id="li_291" class="subMenuHighlight" href=""><span class="subMenuHighlight">Sign Up</span></a>
+                </li>
+              </ul>
+
+              <ul class="panel-heading">
+                <li class="panel-title">
+                  <a class="subMenu1" href="./forgotPassword.html">
+                    <span>Forgot Password</span></a>
+                </li>
+              </ul>
+
+              <ul class="panel-heading">
+                <li class="panel-title">
+                  <a class="subMenu1" href="./login(structured).html">
+                    <span>Login</span></a>
+                </li>
+              </ul>
+
+            </div>
+            <div class="item item-nopad item-noborder item-gold">
+              <a style="padding: 5% 0px" href="" class="btn btn-primary btn-block" role="button">LEARN MORE</a>
+            </div>
+          </div>
+        </div>
+
+        <!--Content-->
+        <div class="col-sm-9 col-md-9 col-lg-10 content equal-height">
+          <div class="content-area-right">
+            <div class="content-crumb-div">
+              <a href="./index.html">Home</a> | <a href="">Your Account</a> | Sign up
+            </div>
+            <div class="row">
+              <form action="/signup" method="POST">
+                <div class="col-md-5 forgot-form">
+
+                  <div class="container">
+                    <hr>
+                    <label for="username"><b>Username</b></label>
+                    <input type="text" placeholder="Enter username" name="username" pattern="^[a-zA-Z0-9]{6,255}$"
+                      title="Please choose a username 6 – 30 characters long, without special characters" required>
+                    <span id="emailFieldError"></span>
+
+                    <label for="email"><b>Email</b></label>
+                    <input type="text" placeholder="Enter Email" name="email" pattern="^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+                      title="Invalid Email" required>
+                    <span id="usernameFieldError"></span>
+
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="password"
+                      pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{7,12}"
+                      title="Please choose an eight-character password that contains at least one uppercase character, one lowercase character and a number"
+                      required>
+                    <span id="passwordFieldError"></span>
+
+                    <label for="psw-repeat"><b>Repeat Password</b></label>
+                    <input type="password" placeholder="Repeat Password" name="password-repeat" required>
+                    <span id="passwordRepeatFieldError"></span>
+
+                    <label>
+                      <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                    </label>
+
+                    <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.
+                    </p>
+
+                    <div class="clearfix">
+                      <button type="button" class="cancelbtn">Cancel</button>
+                      <button type="submit" class="signupbtn">Sign Up</button>
+                    </div>
+                  </div>
+              </form>
+
+
+</body>
+
+</html>
