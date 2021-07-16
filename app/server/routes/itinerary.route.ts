@@ -24,27 +24,7 @@ itineraryRoutes.post('/itinerary', createItinerary)
 
 
 
-async function getHotItineraries(req: Request, res: Response) {
-    const itineraries: any[] = (await client.query(`
-    SELECT 
-        i.title, 
-        i.love, 
-        u.username, 
-        (select place_img.img_path 
-            from place_img 
-            inner join place on place_img.place_id = place.id
-            inner join visit on place.id = visit.place_id
-            where visit.itinerary_id = i.id
-            limit 1) as img_path
-    FROM itinerary i 
-    INNER JOIN users u
-    on i.users_id = u.id
-    ORDER BY i.love DESC
-    LIMIT 3`)).rows;
-    
-    console.log(itineraries);
-    res.json(itineraries);
-}
+
 
 async function getItinerary(req: Request, res: Response) {
     try {
@@ -111,6 +91,28 @@ async function getItinerary(req: Request, res: Response) {
     } catch (error) {
         console.error(error);
     }
+}
+
+async function getHotItineraries(req: Request, res: Response) {
+    const itineraries: any[] = (await client.query(`
+    SELECT 
+        i.title, 
+        i.love, 
+        u.username, 
+        (select place_img.img_path 
+            from place_img 
+            inner join place on place_img.place_id = place.id
+            inner join visit on place.id = visit.place_id
+            where visit.itinerary_id = i.id
+            limit 1) as img_path
+    FROM itinerary i 
+    INNER JOIN users u
+    on i.users_id = u.id
+    ORDER BY i.love DESC
+    LIMIT 3`)).rows;
+    
+    console.log(itineraries);
+    res.json(itineraries);
 }
 
 async function createItinerary(req: Request, res: Response) {

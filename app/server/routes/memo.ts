@@ -1,6 +1,6 @@
 import express,{Request,Response} from 'express';
 import {client} from '../config/db';
-import {upload} from './app';
+import {upload} from '../app';
 
 
 export const memoRoutes = express.Router();

@@ -26,5 +26,5 @@ declare module 'grant-express'{
         callback:string
     }
 
-    export = grant;
+    
 }

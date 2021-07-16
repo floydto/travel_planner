@@ -92,7 +92,7 @@ async function signup(req: Request, res: Response) {
         res.send("password mismatch")
     } else {
         // res.json("Congratulation! Your registration was successful!")
-         res.redirect('/')
+    res.redirect('/')
     }
     const { username, email, password } = req.body;
     const hashedPassword = await hashPassword(password);
@@ -111,6 +111,7 @@ async function loginGoogle (req:express.Request,res:express.Response){
             "Authorization":`Bearer ${accessToken}`
         }
     });
+    
     const result = await fetchRes.json();
     console.log(result)
     const users = (await client.query(`SELECT * FROM users WHERE users.username = $1`,[result.email])).rows;
