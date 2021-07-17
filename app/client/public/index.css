@@ -1,49 +1,48 @@
-footer{
+footer {
     font-size: 20px;
     border: 1px solid black;
     padding: 25px;
-    display:flex;
+    display: flex;
     justify-content: center;
 }
 
-footer>div{
-    margin:0 30px 0 30px; 
+footer>div {
+    margin: 0 30px 0 30px;
     font-family: 'Roboto Slab', serif;
     color: #7d5506;
     font-size: 30px;
 }
 
 #bg {
-
-    background: linear-gradient(transparent,transparent, #d1cfcf),url("./img/bg.jpg") no-repeat center;
-    height: 50%; 
+    background: linear-gradient(transparent, transparent, #d1cfcf), url("./img/bg.jpg") no-repeat center;
+    height: 50%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-  }
-
-#navbarTitle{
-    width:100%;
 }
 
-#navbarTitleList{
-    width:60%;
+#navbarTitle {
+    width: 100%;
 }
 
-#logo{
-  font-size: 55px;
-  color:lightseagreen;
+#navbarTitleList {
+    width: 60%;
 }
 
-#loginSignUpBtns{
+#logo {
+    font-size: 55px;
+    color: lightseagreen;
+}
+
+#loginSignUpBtns {
     display: flex;
     align-items: center;
 }
 
-.login-signUp>a{
-    background-color: #7d5506; 
+.login-signUp>a {
+    background-color: #7d5506;
     border: none;
-    color:  papayawhip!important;
+    color: papayawhip!important;
     padding: 7px 32px;
     text-align: center;
     text-decoration: none;
@@ -51,151 +50,147 @@ footer>div{
     font-size: 30px;
     margin: 10px;
     font-family: 'Playfair Display', serif;
-    min-width:160px;
+    min-width: 160px;
 }
 
-#logo>img{
-    width:50px;
-    margin-top:2px;
+#logo>img {
+    width: 50px;
+    margin-top: 2px;
     margin-left: 2px;
 }
 
-#planContainer{
+#planContainer {
     display: flex;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.row{
-    margin:10px;
+.row {
+    margin: 10px;
 }
 
-#img_Place{
-    width:160%;
+#img_Place {
+    width: 160%;
     height: auto;
 }
 
-#name_place{
+#name_place {
     font-family: 'Noto Serif TC', serif;
     font-size: 45px;
 }
 
-#section1{
+#section1 {
     display: flex;
-    padding:35px;
+    padding: 35px;
     margin-left: 8%;
-  
 }
 
-.contentContainer{
+.contentContainer {
     position: relative;
 }
 
-#placeContent{
+#placeContent {
     padding: 15px;
     position: absolute;
     right: -20%;
     top: 65%;
     transform: translate(180%, -50%);
-    z-index: 5 ;
-    background-color:#ffbd71;
-    color:#833704  ;
+    z-index: 5;
+    background-color: #ffbd71;
+    color: #833704;
     min-width: 550px;
     min-height: 300px;
     font-style: oblique;
 }
 
-
-
-#description_place{
+#description_place {
     margin-left: 15px;
     margin-top: 10px;
-    max-height:200px;
+    max-height: 200px;
     overflow: auto;
     overflow-wrap: break-word;
     font-size: 24px;
 }
 
-#love_place{
+#love_place {
     font-size: 20px;
     position: absolute;
-    top:2%;
-    right: 2%;;
+    top: 2%;
+    right: 2%;
+    ;
 }
 
-#searchBar{
+#searchBar {
     padding-top: 5px;
     padding-right: 10px;
     padding-bottom: 5px;
     padding-left: 20px;
-    width:auto;
-    min-width:460px;
+    width: auto;
+    min-width: 460px;
 }
 
-#searchBar>input{
-    width:330px
+#searchBar>input {
+    width: 330px
 }
 
-#searchBar>button{
+#searchBar>button {
     color: #7d5506;
-    border-color:#7d5506;
+    border-color: #7d5506;
     border-width: 2px;
 }
 
-#upperBox{
-    width:98%;
+#upperBox {
+    width: 98%;
     display: flex;
 }
 
-#lowerBox{
-    width:98%;
+#lowerBox {
+    width: 98%;
     display: flex;
     min-height: 400px;
 }
 
-#lowerBox>div>h1{
-    flex:1;
+#lowerBox>div>h1 {
+    flex: 1;
     font-size: 80px;
     color: papayawhip;
     padding-top: 10%;
     font-family: 'Amatic SC', cursive;
 }
 
-#lowerBox>div>div{
+#lowerBox>div>div {
     padding-top: 11%;
     padding-left: 1%;
 }
 
-.thumbnail{
-    width: 300px; 
+.thumbnail {
+    width: 300px;
     height: 500px;
     overflow: auto;
 }
 
-.thumbnail>img{
+.thumbnail>img {
     width: 100%;
     height: auto;
     display: block;
 }
 
-#mainTitle{
+#mainTitle {
     font-size: 1.7rem;
     color: #7d5506;
     font-family: 'Playfair Display', serif;
     font-style: oblique;
     padding-top: 15px;
-    
 }
 
-.sizeTo145{
+.sizeTo145 {
     padding: 0;
     max-width: 285px;
     display: flex;
 }
 
-
 button {
-    background-color: #ffbd71; 
+    background-color: #ffbd71;
     border: none;
     color: white;
     padding: 7px 32px;
@@ -206,234 +201,230 @@ button {
     margin: 5px;
     font-style: italic;
     font-family: 'Playfair Display', serif;
-  }
-
-.carousel-caption{
-    color:black;
-    left:0%;
-    right:0%;
 }
 
-.hotJourney{
+.carousel-caption {
+    color: black;
+    left: 0%;
+    right: 0%;
+}
 
+.hotJourney {
     margin: 5px 0 5px 0;
-    width:100%;  
+    width: 100%;
     display: flex;
 }
 
-.hotJourney:after{
+.hotJourney:after {
     display: block;
     padding-bottom: 100%;
 }
 
-.placeLike{
+.placeLike {
     font-size: 24px;
     font-family: 'Times New Roman', Times, serif;
-    
 }
 
-.trending{
-    margin:20px;
+.trending {
+    margin: 20px;
 }
 
-
-.mostCommentedRoutes{
+.mostCommentedRoutes {
     border: 1px solid darkcyan;
-    margin: 5px 0 5px 0;   
-    width:100%; 
+    margin: 5px 0 5px 0;
+    width: 100%;
     display: flex;
 }
 
-.mostCommentedRoutes:after{
+.mostCommentedRoutes:after {
     display: block;
     padding-bottom: 100%;
 }
 
-.route{
+.route {
     border: 3px solid black;
-    margin: 1px 0 1px 2px; 
+    margin: 1px 0 1px 2px;
     color: orangered;
     font-weight: 700;
     font-size: 28px;
-    width:96%;
+    width: 96%;
 }
 
 .route:after {
     display: block;
     padding-bottom: 100%;
-  }
+}
 
-.route>img{
-    width:100%;
+.route>img {
+    width: 100%;
 }
 
 .route>img:after {
     display: block;
     padding-bottom: 100%;
-  }
+}
 
-.route>img:hover{
+.route>img:hover {
     opacity: 0.5;
 }
 
-
-.subMainTitle{
+.subMainTitle {
     display: block;
     font-family: 'Roboto Slab', serif;
 }
 
-
-img{
+img {
     width: 100%;
 }
 
-.trendingPlaces{
+.trendingPlaces {
     padding-left: 8%;
     display: flex;
     position: relative;
 }
 
-.card{
-    width:100%;
+.card {
+    width: 100%;
     margin-left: 0;
 }
 
-.textTotal{
+.textTotal {
     position: relative;
 }
 
-.placeTitle{
+.placeTitle {
     padding: 3px 0 0 5px;
 }
 
-.descriptionText{
+.descriptionText {
     font-size: 24px;
     font-family: 'Times New Roman', Times, serif;
     overflow-wrap: break-word;
-    max-width:840px;
+    max-width: 840px;
 }
 
-.inner2{
+.inner2 {
     position: absolute;
     max-width: 750px;
     width: 35%;
-    right:2%;
-    top:75px;
-    border:2px burlywood dotted;
+    right: 2%;
+    top: 75px;
+    border: 2px burlywood dotted;
     border-radius: 4px;
 }
 
-.inner2>a>img{
-    margin-top:10px;
-    margin-bottom:10px;
+.inner2>a>img {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
-.carousel-item>img{
+.carousel-item>img {
     max-height: 400px;
-    max-width:840px;
-    width:auto;
-    width:100%;
+    max-width: 840px;
+    width: auto;
+    width: 100%;
 }
 
 @media only screen and (max-width: 870px) {
     .lower {
-      display: block;
+        display: block;
     }
-  }
-    
+}
 
-@media only screen and (max-width:1060px){
-    .login-signUp>a{
+@media only screen and (max-width:1060px) {
+    .login-signUp>a {
         font-size: 18px;
-        min-width:80px;
+        min-width: 80px;
     }
 }
 
-@media only screen and (max-width:770px){
-    .textTotal{
-        position:static;
+@media only screen and (max-width:770px) {
+    .textTotal {
+        position: static;
     }
 }
 
-@media only screen and (max-width:1020px){
-    #mainTitle{
+@media only screen and (max-width:1020px) {
+    #mainTitle {
         display: hidden;
     }
 }
 
-@media only screen and (max-width:1060px){
-    #searchBar{
-        min-width:300px;
+@media only screen and (max-width:1060px) {
+    #searchBar {
+        min-width: 300px;
     }
-    #searchBar>input{
-        width:160px;
-    }
-}
-
-@media only screen and (max-width:1180px){
-    .login-signUp>a{
-        font-size: 24px;
-        min-width:100px;
+    #searchBar>input {
+        width: 160px;
     }
 }
 
-@media only screen and (max-width:1060px){
-    .login-signUp>a{
+@media only screen and (max-width:1180px) {
+    .login-signUp>a {
         font-size: 24px;
-        min-width:100px;
+        min-width: 100px;
     }
 }
 
-@media only screen and (max-width:1465px){
-    #planBtn{
+@media only screen and (max-width:1060px) {
+    .login-signUp>a {
         font-size: 24px;
-        min-width:100px;
+        min-width: 100px;
+    }
+}
+
+@media only screen and (max-width:1465px) {
+    #planBtn {
+        font-size: 24px;
+        min-width: 100px;
         padding-left: 7px;
         padding-right: 7px;
     }
-    #lowerBox>div>div{
-        padding-top:12%;
+    #lowerBox>div>div {
+        padding-top: 12%;
     }
 }
 
-@media only screen and (max-width:994px){
-    #planBtn{
-   margin-left: 12%;
+@media only screen and (max-width:994px) {
+    #planBtn {
+        margin-left: 12%;
     }
-    #lowerBox>div>div{
-        padding-top:30px;
-    }
-}
-
-@media only screen and (min-width:1800px){
-    #lowerBox>div>div{
-        padding-top:11%;
+    #lowerBox>div>div {
+        padding-top: 30px;
     }
 }
 
-@media only screen and (min-width:2000px){
-    #lowerBox>div>div{
-        padding-top:10%;
-    }
-    .inner2{
-        right:1%;
+@media only screen and (min-width:1800px) {
+    #lowerBox>div>div {
+        padding-top: 11%;
     }
 }
 
-@media only screen and (max-width:1550px){
-    .inner2{
-        display:none;
+@media only screen and (min-width:2000px) {
+    #lowerBox>div>div {
+        padding-top: 10%;
+    }
+    .inner2 {
+        right: 1%;
     }
 }
 
-@media only screen and (min-width:1650px){
-    .inner2{
-        top:65px;
-}}
+@media only screen and (max-width:1550px) {
+    .inner2 {
+        display: none;
+    }
+}
 
-@media only screen and (max-width:2030px){
-    #placeContent{
+@media only screen and (min-width:1650px) {
+    .inner2 {
+        top: 65px;
+    }
+}
+
+@media only screen and (max-width:2030px) {
+    #placeContent {
         transform: translate(45%, 70%);
         min-width: 1150px;
         margin-bottom: 10px;
-}}
+    }
+}
